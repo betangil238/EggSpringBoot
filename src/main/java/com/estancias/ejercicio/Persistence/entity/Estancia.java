@@ -17,7 +17,7 @@ public class Estancia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true )
-    private long id;
+    private Long id;
     private String huesped;
     @Column(columnDefinition = "DATETIME")
     private Date fechaInicio;

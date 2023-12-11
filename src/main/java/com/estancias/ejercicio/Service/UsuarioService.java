@@ -26,7 +26,7 @@ public class UsuarioService {
         return this.usuarioRepository.findAll();
     }
 
-    public Usuario obtenerPorId(Long id){
+    public Usuario obtenerPorId(long id){
         return this.usuarioRepository.findById(id).orElse(null);
     }
 

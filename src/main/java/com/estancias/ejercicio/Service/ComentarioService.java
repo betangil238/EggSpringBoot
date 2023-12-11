@@ -18,7 +18,7 @@ public class ComentarioService {
     }
 
     @Transactional
-    public Comentario guardarUsuario(Comentario comentario){
+    public Comentario guardarComentario(Comentario comentario){
         return this.comentarioRepository.save(comentario);
     }
 

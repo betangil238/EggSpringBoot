@@ -16,7 +16,7 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true )
-    private long id;
+    private Long id;
     @Column(length = 255,unique = true)
     private String alias;
     @Column(unique = true)

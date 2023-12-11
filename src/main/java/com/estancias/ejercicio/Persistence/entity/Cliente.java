@@ -14,10 +14,10 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true )
-    private long id;
+    private Long id;
     private String nombre;
     private String calle;
-    private int numero;
+    private Integer numero;
     private String codPostal;
     private String ciudad;
     private String pais;

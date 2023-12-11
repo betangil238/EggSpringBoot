@@ -18,7 +18,7 @@ public class EstanciaService {
     }
 
     @Transactional
-    public Estancia guardarFamilia(Estancia estancia){
+    public Estancia guardarEstancia(Estancia estancia){
         return this.estanciaRepository.save(estancia);
     }
 

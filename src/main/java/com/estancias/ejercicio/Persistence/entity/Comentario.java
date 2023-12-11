@@ -14,9 +14,9 @@ public class Comentario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true )
-    private long id;
+    private Long id;
     private String descripcion;
-    private long idCasa;
+    private Long idCasa;
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "idCasa", referencedColumnName = "id",insertable = false,updatable = false)

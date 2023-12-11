@@ -16,9 +16,9 @@ public class Casa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, unique = true )
-    private long id;
+    private Long id;
     private String calle;
-    private int numero;
+    private Integer numero;
     private String codPostal;
     private String ciudad;
     private String pais;
@@ -26,9 +26,9 @@ public class Casa {
     private Date fechaDesde;
     @Column(columnDefinition = "DATETIME")
     private Date fechaHasta;
-    private int minDias;
-    private int maxDias;
-    private double precio;
+    private Integer minDias;
+    private Integer maxDias;
+    private Double precio;
     private String tipoVivienda;
     private Long idFamilia;
 
